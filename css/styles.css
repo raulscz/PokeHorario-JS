@@ -1,0 +1,53 @@
+* {
+    font-family: 'Bebas Neue', cursive;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    height: 25vh;
+    width: 100%;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.flex-cv {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+
+div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    height: 50vh;
+    padding-right: 3.7vh;
+}
+
+div.scrollmenu div.carta {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 3.7vh 0 3.7vh 3.7vh;
+}
+
+.carta img {
+    width: 40vh;
+}
+
+.footer {
+    height: 25vh;
+    width: 100%;
+}
+
+.footer img {
+    width: 10%;
+}
