@@ -28,7 +28,7 @@ div.scrollmenu {
     overflow: auto;
     white-space: nowrap;
     height: 50vh;
-    padding-right: 3.7vh;
+    padding-right: 3.6vh;
 }
 
 div.scrollmenu div.carta {
@@ -36,7 +36,7 @@ div.scrollmenu div.carta {
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 3.7vh 0 3.7vh 3.7vh;
+    padding: 3.6vh 0 3.6vh 3.6vh;
 }
 
 .carta img {
