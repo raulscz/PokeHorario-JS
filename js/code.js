@@ -4,7 +4,7 @@ window.onload = function() {
 
 function ListRandom() {
     buttonOpacity();
-    galleryRandom(0, 10, null, null);
+    galleryRandom(0, 17, null, null);
 }
 
 function saludo() {
@@ -12,13 +12,13 @@ function saludo() {
     var hora = hoy.getHours();
     if (hora < 7 || hora > 17) {
         const h1 = document.getElementById('saludo');
-        let HTMLString = '<h1>Buenas noches</h1>'
+        let HTMLString = '<h1>¡Buenas noches!</h1>'
         h1.innerHTML = HTMLString;
         document.body.style.backgroundColor = "#3E3730"
 
     } else {
         const h1 = document.getElementById('saludo');
-        let HTMLString = '<h1>Buenos dias</h1>'
+        let HTMLString = '<h1>¡Buenos dias!</h1>'
         h1.innerHTML = HTMLString;
         document.body.style.backgroundColor = "rgb(238, 107, 47)"
     }
@@ -39,24 +39,23 @@ function getRndInteger(min, max) {
 
 
 function getListRandom(n, min, max) {
-    var arr = [];
+    var array = [];
     for (let i = 0; i < n; i++) {
-        var numr = getRndInteger(min, max);
-        if (arr.includes(numr)) {
+        var num = getRndInteger(min, max);
+        if (array.includes(num)) {
             i--
         } else {
-            arr.push(numr);
+            array.push(num);
         }
     }
-    return arr;
+    return array;
 }
 
-function galleryRandom(min, max, images, listRnd) {
-    images = document.getElementsByTagName("img");
-    listRnd = getListRandom(10, 1, 10);
+function galleryRandom(min, max, img, listRandom) {
+    img = document.getElementsByTagName("img");
+    listRandom = getListRandom(17, 1, 17);
     for (let i = min; i < max; i++) {
-        images[i].setAttribute("src", "./img/IMG_" + listRnd[i] + ".PNG");
-        console.log(images[i]);
+        img[i].setAttribute("src", "./img/IMG_" + listRandom[i] + ".PNG");
     }
-    return images;
+    return img;
 }
