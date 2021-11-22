@@ -31,6 +31,10 @@ div.scrollmenu {
     padding-right: 3.6vh;
 }
 
+.scrollmenu::-webkit-scrollbar {
+    display: none;
+}
+
 div.scrollmenu div.carta {
     display: inline-block;
     color: white;
